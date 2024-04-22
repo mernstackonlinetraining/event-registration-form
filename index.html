@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Homework</title>
+    <title>Event Registration Form</title>
     <style>
       * {
         margin: 0;
@@ -44,11 +44,10 @@
       }
       .row {
         display: flex;
-        flex-direction: row;
-        gap: 10px;
+        justify-content: space-between;
       }
-      .w-50 {
-        width: 50%;
+      .w-48 {
+        width: 48%;
       }
     </style>
   </head>
@@ -58,7 +57,7 @@
       <br />
       <br />
       <div class="row">
-        <div class="w-50">
+        <div class="w-48">
           <label class="firstNameLabel">First Name</label>
           <br />
           <br />
@@ -68,7 +67,7 @@
             placeholder="Enter your first name"
           />
         </div>
-        <div class="w-50">
+        <div class="w-48">
           <label class="lastNameLabel">Last Name</label>
           <br />
           <br />
@@ -93,12 +92,12 @@
       <br />
       <br />
       <div class="row">
-        <div class="w-50">
+        <div class="w-48">
           <label>Event Date</label>
           <br /><br />
           <input class="date" type="date" />
         </div>
-        <div class="w-50">
+        <div class="w-48">
           <label>Event Time</label><br /><br />
           <input class="time" type="time" />
         </div>
