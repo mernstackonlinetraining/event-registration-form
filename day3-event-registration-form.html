@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <title>Homework</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        outline: none;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(240, 248, 254);
+      }
+      form {
+        padding: 60px;
+        margin: 80px;
+        width: 50%;
+        border: solid 1px rgb(244, 225, 225);
+        background-color: white;
+      }
+      h1 {
+        text-align: center;
+      }
+      input:not(.yes, .no) {
+        border: 1px solid rgb(219, 218, 218);
+        padding: 10px;
+        width: 100%;
+      }
+      textarea {
+        padding: 10px;
+        width: 100%;
+        border: 2px solid rgb(230, 230, 230);
+      }
+      .btn {
+        cursor: pointer;
+        padding: 8px;
+        background-color: rgb(68, 68, 255);
+        color: aliceblue;
+        border: none;
+        border-radius: 6px;
+        width: 100%;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+      .w-50 {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Event Registration Form</h1>
+      <br />
+      <br />
+      <div class="row">
+        <div class="w-50">
+          <label class="firstNameLabel">First Name</label>
+          <br />
+          <br />
+          <input
+            class="firstNameValue"
+            type="text"
+            placeholder="Enter your first name"
+          />
+        </div>
+        <div class="w-50">
+          <label class="lastNameLabel">Last Name</label>
+          <br />
+          <br />
+          <input
+            class="lastNameValue"
+            type="text"
+            placeholder="Enter your last name"
+          />
+        </div>
+      </div>
+      <br />
+      <label>Email Address</label>
+      <br />
+      <br />
+      <input class="email" type="email" placeholder="Example@domain.com" />
+      <br />
+      <br />
+      <label>How many guest are you bringing?</label>
+      <br />
+      <br />
+      <input class="number" type="number" />
+      <br />
+      <br />
+      <div class="row">
+        <div class="w-50">
+          <label>Event Date</label>
+          <br /><br />
+          <input class="date" type="date" />
+        </div>
+        <div class="w-50">
+          <label>Event Time</label><br /><br />
+          <input class="time" type="time" />
+        </div>
+      </div>
+      <br />
+      <p>Are You coming to event?</p>
+      <br />
+      <input id="yes" class="yes" type="radio" name="yes" />
+      <label for="yes">Yes</label>
+      <input id="no" class="no" type="radio" name="yes" />
+      <label for="no">No</label>
+      <br />
+      <br />
+      <label>Upload file</label>
+      <br />
+      <br />
+      <input type="file" />
+      <br />
+      <br />
+      <label>Event Details</label>
+      <br />
+      <br />
+      <textarea
+        cols="30"
+        rows="7"
+        placeholder="Type your Event Details"
+      ></textarea>
+      <br />
+      <br />
+      <button class="btn">Register</button>
+    </form>
+  </body>
+</html>
